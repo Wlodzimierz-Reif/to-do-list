@@ -1,0 +1,13 @@
+input {
+  display: block;
+  min-width: 200px;
+  min-height: 30px;
+  margin: 10px 0;
+  //   border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid grey;
+  &:focus {
+    border-bottom: 1px solid red;
+    outline: none;
+  }
+}

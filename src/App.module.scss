@@ -1,16 +1,56 @@
+@font-face {
+  font-family: "latinoRumba";
+  src: local("latinoRumba"), url(./fonts/latinoRumba.otf) format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
+  background-color: black;
+  font-family: latinoRumba;
+  color: rgb(245, 149, 194);
 }
 
-.item {
-  border: 1px solid black;
-  max-width: 700px;
+.header {
+  padding-left: 100px;
 
-  .picture {
-    width: 150px;
-    height: 150px;
-    border: 1px solid rgb(102, 102, 102);
+  img {
+    position: absolute;
+    height: 136px;
+    left: 34px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .bottom {
+    position: relative;
+    left: -11px;
+  }
+}
+
+.section {
+  .inputFields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    border: 2px solid rgb(232, 0, 139);
     border-radius: 5px;
+    max-width: 700px;
+    padding: 10px;
+
+    .picture {
+      width: 150px;
+      height: 150px;
+      border: 1px solid rgb(102, 102, 102);
+      border-radius: 5px;
+    }
   }
 }

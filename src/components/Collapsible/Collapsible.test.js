@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
+import Collapsible from "./Collapsible";
 
-describe("Button tests", () => {
+describe("Collapsible tests", () => {
   let component;
 
   beforeEach(() => {
